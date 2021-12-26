@@ -1,7 +1,14 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-#*.py[cod]
+*.py[cod]
 *$py.class
+
+# PyCharm IDE
+.idea/
+
+# VSCode IDE
+.vscode/
+*.vs
 
 # C extensions
 *.so
@@ -20,7 +27,7 @@ parts/
 sdist/
 var/
 wheels/
-#pip-wheel-metadata/
+pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
