@@ -1,16 +1,31 @@
-# ДЗ 13. Files. Django
+# HW 13. Files. Django
+___
+This is a Django-based project of social network web-site. 
+
+### Getting started
+Currently, project can be run on localhost only (http://127.0.0.1:8000/) by applying command:
 ```
-Выберите любую папку на своем компьютере, имеющую вложенные директории. Создайте ф-цию, которая выведет в терминал ее содержимое и всех подкаталогов. (Этот файл с -фцией должен быть в корне проекта и называться files_test. Для него должна быть создана отдельная ветка - features-files)
-Создать базовый шаблон джанго приложения
-Создать новое приложение внутри при помощи комманды django-admin startapp {app_name}, где {app_name} - имя нового приложения (core - желательно)
-Добавить в README.md файл описание для каждого файла и каталога который создан (простота изложения сути при описании файла/папки важна!)
-
-
-В качестве сданной домашки жду 2 ссылки:
-
-На файл в отдельной ветке
-На джанго проект в master-e или Pull request по желанию.
-
+python manage.py runserver
 ```
 
+### Project structure
+*...Under construction...*
+```
+└───config                  # project root directory
+    ├───core                # app "Core" directory
+    │   └───migrations      # built-in folder for generated migrations files
+```
 
+**CONFIG**
+
+> *asgi.py* | *wsgi.py* : asynchronous and synchronous app servers
+> 
+> *urls.py* : list routes URLs to views
+>
+> *settings.py* : list of project settings and variables
+
+**CORE**
+>*models.py* : list of models describing data structure
+> 
+>*views.py* : list of class methods for building up web-requests
+___
