@@ -1,4 +1,4 @@
-name: Flake8
+name: Code_Quality
 
 on: 
   pull_request:
