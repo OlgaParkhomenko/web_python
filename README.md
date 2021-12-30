@@ -11,9 +11,9 @@ python manage.py runserver
 ### Project structure
 *...Under construction...*
 ```
-└───config                  # project root directory
-    ├───core                # app "Core" directory
-    │   └───migrations      # built-in folder for generated migrations files
+├───config                  # project root directory
+├───core                    # app "Core" directory
+│   ├───migrations          # built-in folder for generated migrations files
 ```
 
 **CONFIG**
