@@ -1,4 +1,4 @@
-# HW 13. Files. Django
+# HW 15. Django models
 ___
 This is a Django-based project of social network web-site. 
 
