@@ -1,5 +1,5 @@
 # ДЗ 14. Проектирование баз данных
 
-mountaineering_club
-hospital
-auction
+![ScreenShot](ERD_mountclub.png)
+![ScreenShot](ERD_hospital.png)
+![ScreenShot](ERD_auction.png)
