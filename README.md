@@ -1,4 +1,4 @@
-# HW 13. Files. Django
+# HW 15. Django models
 ___
 This is a Django-based project of social network web-site. 
 
@@ -11,9 +11,9 @@ python manage.py runserver
 ### Project structure
 *...Under construction...*
 ```
-└───config                  # project root directory
-    ├───core                # app "Core" directory
-    │   └───migrations      # built-in folder for generated migrations files
+├───config                  # project root directory
+├───core                    # app "Core" directory
+│   ├───migrations          # built-in folder for generated migrations files
 ```
 
 **CONFIG**
