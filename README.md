@@ -18,13 +18,14 @@ python manage.py runserver
 
 **CONFIG**
 
-> *asgi.py* | *wsgi.py* : asynchronous and synchronous app servers
+> *asgi.py* | *wsgi.py* : asynchronous and synchronous app-server gateway interfaces
 > 
 > *urls.py* : list routes URLs to views
 >
 > *settings.py* : list of project settings and variables
 
 **CORE**
+
 >*models.py* : list of models describing data structure
 > 
 >*views.py* : list of class methods for building up web-requests
