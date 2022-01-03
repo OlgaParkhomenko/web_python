@@ -1,11 +1,12 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
 
 class Base(models.Model):
-    user = models.ForeignKey(User, null=False, blank=False, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, null=True, blank=False, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -17,6 +18,12 @@ class Post(Base):
     title = models.CharField(max_length=100, null=False, blank=False)
     content = models.TextField(null=False, blank=False)
     image = models.CharField(max_length=255, null=True, blank=True)
+    slug = models.SlugField(null=True)
+
+    def save(self, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        return super().save(**kwargs)
 
     def __str__(self):
         return f'{self.title}'

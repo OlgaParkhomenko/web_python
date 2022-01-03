@@ -12,6 +12,7 @@ class PostAdmin(admin.ModelAdmin):
         LikeInline,
     ]
     list_display = 'title', 'user', 'created_at'
+    prepopulated_fields = {'slug': ('title',),}
 
 
 admin.site.register(Post, PostAdmin)
