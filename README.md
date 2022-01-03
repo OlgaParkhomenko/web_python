@@ -13,7 +13,14 @@ python manage.py runserver
 ```
 ├───config                  # project root directory
 ├───core                    # app "Core" directory
-│   ├───migrations          # built-in folder for generated migrations files
+│   ├───migrations              # built-in folder for generated migrations files
+├───users                   # app "Users" directory
+│   ├───migrations              # built-in folder for generated migrations files
+├───templates               # HTML-templates directory
+│   ├───core                    # app "Core" related HTML-templates
+│   └───users                   # app "Users" related HTML-templates
+
+
 ```
 
 **CONFIG**
