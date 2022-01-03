@@ -1,4 +1,4 @@
-# HW 15. Django models
+# HW 17. Django CBV detail page
 ___
 This is a Django-based project of social network web-site. 
 
